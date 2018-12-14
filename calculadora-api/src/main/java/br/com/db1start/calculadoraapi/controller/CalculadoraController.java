@@ -22,7 +22,7 @@ public class CalculadoraController {
 	
 	@Autowired
 	private CalculadoraService calculadoraService;
-	
+	public String a;
 	@PostMapping()
 	public Calculadora post(@RequestBody CalculadoraDTO calculadora) {
 		return calculadoraService.salvaResultado(calculadora.getNumeroUm(),calculadora.getNumeroDois(),calculadora.getOperacao());
